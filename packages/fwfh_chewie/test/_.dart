@@ -8,19 +8,19 @@ import '../../core/test/_.dart' as helper;
 const kDataUri = helper.kDataUri;
 
 String? videoPlayerExplainer(helper.Explainer parent, Widget widget) {
-  if (widget is VideoPlayer) {
-    final poster = widget.poster != null
-        ? ',poster=${parent.explain(widget.poster!)}'
-        : '';
-    return '[VideoPlayer:url=${widget.url}'
-        ',aspectRatio=${widget.aspectRatio.toStringAsFixed(2)}'
-        "${!widget.autoResize ? ',autoResize=${widget.autoResize}' : ''}"
-        "${widget.autoplay ? ',autoplay=${widget.autoplay}' : ''}"
-        "${widget.controls ? ',controls=${widget.controls}' : ''}"
-        "${widget.loop ? ',loop=${widget.loop}' : ''}"
-        '$poster'
-        ']';
-  }
+  // if (widget is VideoPlayer) {
+  //   final poster = widget.poster != null
+  //       ? ',poster=${parent.explain(widget.poster!)}'
+  //       : '';
+  //   return '[VideoPlayer:url=${widget.url}'
+  //       ',aspectRatio=${widget.aspectRatio.toStringAsFixed(2)}'
+  //       "${!widget.autoResize ? ',autoResize=${widget.autoResize}' : ''}"
+  //       "${widget.autoplay ? ',autoplay=${widget.autoplay}' : ''}"
+  //       "${widget.controls ? ',controls=${widget.controls}' : ''}"
+  //       "${widget.loop ? ',loop=${widget.loop}' : ''}"
+  //       '$poster'
+  //       ']';
+  // }
 
   return null;
 }
